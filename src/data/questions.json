@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "type": "Check",
+        "optional": "No",
+        "content": "Do you use social media?",
+        "note": "Social media is important nowadays!",
+        "choices": ["Yes", "No", "I don't know"],
+        "image": "http://url.com"
+    },
+    {
+        "id": 1,
+        "type": "Options",
+        "prerequisite": {
+            "dependsOn": 0,
+            "expectedAnswer": "Yes"
+        },
+        "optional": "No",
+        "content": "Mark which one(s) of the following platforms you use:",
+        "choices": ["Facebook", "X", "Instagram", "TikTok", "Reddit", "Others"]
+    },
+    {
+        "id": 2,
+        "type": "Options",
+        "optional": true,
+        "content": "Please specify how many hours you invest on social media platforms on a daily basis:",
+        "choices": ["1 hour", "1 to 2 hours", "3 to 5 hours", "5 hours or more"]
+    },
+    {
+        "id": 3,
+        "type": "Input",
+        "optional": false,
+        "content": "Please specify how many hours you invest on social media platforms on a daily basis:",
+        "choices": ["1 hour", "1 to 2 hours", "3 to 5 hours", "5 hours or more"]
+    },
+    {
+        "id": 4,
+        "type": "Input",
+        "optional": false,
+        "content": "Tell us what you think about the questionnaire! If you have any ideas or suggestions, they are going to be welcome :)"
+    }
+]
