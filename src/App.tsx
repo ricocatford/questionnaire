@@ -4,7 +4,7 @@ import OptionsQuestion from "./components/questions/options-question";
 import data from "./data/questions.json";
 
 function App() {
-    const questionByType = (question: any) => {
+    const selectQuestionByType = (question: any) => {
         switch (question.type) {
             case "Options":
                 return <OptionsQuestion key={question.id} data={question} />;
@@ -17,17 +17,12 @@ function App() {
         }
     };
 
-    return <form>{data.map((question) => questionByType(question))}</form>;
-
-    // return (
-    //     <>
-    //         {data.map((question) => (
-    //             <>
-    //                 <OptionsQuestion key={question.id} data={question} />
-    //             </>
-    //         ))}
-    //     </>
-    // );
+    return (
+        <form>
+            {data.map((question) => selectQuestionByType(question))}
+            <button type="submit">Submit</button>
+        </form>
+    );
 }
 
 export default App;

@@ -8,17 +8,15 @@ export default function Checkbox({ value }: { value: any }) {
     };
 
     return (
-        <form>
-            <label htmlFor={value}>
-                <input
-                    type="checkbox"
-                    id={value}
-                    name={value}
-                    checked={checked}
-                    onChange={handleChange}
-                />
-                {value}
-            </label>
-        </form>
+        <label htmlFor={value}>
+            <input
+                type="checkbox"
+                id={value}
+                name={value}
+                checked={checked}
+                onChange={handleChange}
+            />
+            {value}
+        </label>
     );
 }
