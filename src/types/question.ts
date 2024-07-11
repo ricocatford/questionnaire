@@ -1,9 +1,9 @@
 export interface Question {
     id: number;
     type: string;
-    prerequisite: {};
+    prerequisite?: {};
     content: string;
-    note: string;
-    choices: [];
+    note?: string;
+    choices?: [];
     image: string;
 }

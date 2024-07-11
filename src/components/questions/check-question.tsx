@@ -7,7 +7,7 @@ export default function CheckQuestion(question: Question) {
         <>
             <p>{data.content}</p>
             {data.choices?.map((choice: string) => (
-                <Radio key={choice} value={choice} />
+                <Radio key={choice} value={choice} question={data.content} />
             ))}
         </>
     );

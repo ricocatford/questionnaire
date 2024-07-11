@@ -1,10 +1,12 @@
 import "./App.css";
+
 import CheckQuestion from "./components/questions/check-question";
 import OptionsQuestion from "./components/questions/options-question";
 import data from "./data/questions.json";
+import { Question } from "./types/question";
 
 function App() {
-    const selectQuestionByType = (question: any) => {
+    const selectQuestionByType = (question: Question) => {
         switch (question.type) {
             case "Options":
                 return <OptionsQuestion key={question.id} data={question} />;

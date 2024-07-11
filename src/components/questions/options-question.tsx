@@ -2,7 +2,7 @@ import { Question } from "../../types/question";
 import Checkbox from "../form/checkbox";
 
 export default function OptionsQuestion(question: Question) {
-    const { data }: any = question;
+    const { data }: Question = question;
     return (
         <>
             <p>{data.content}</p>
