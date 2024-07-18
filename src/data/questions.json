@@ -21,17 +21,17 @@
     },
     {
         "id": 2,
-        "type": "Options",
+        "type": "Check",
         "optional": true,
-        "content": "Please specify how many hours you invest on social media platforms on a daily basis:",
+        "content": "Please tell us how many hours you invest on social media platforms on a daily basis:",
         "choices": ["1 hour", "1 to 2 hours", "3 to 5 hours", "5 hours or more"]
     },
     {
         "id": 3,
-        "type": "Input",
+        "type": "Check",
         "optional": false,
-        "content": "Please specify how many hours you invest on social media platforms on a daily basis:",
-        "choices": ["1 hour", "1 to 2 hours", "3 to 5 hours", "5 hours or more"]
+        "content": "Please specify on what times during the day you use social media platforms",
+        "choices": ["Morning", "Afternoon", "Evening", "Night"]
     },
     {
         "id": 4,
